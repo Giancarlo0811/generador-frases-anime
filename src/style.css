@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 2rem;
+}
+
+#content {
+    background-color: #f4f3f3;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.header {
+    margin-top: 1rem;
+    background-color: #333;
+    opacity: .9;
+    width: 100%;
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.links-container {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.link-btn,
+.generate-quote,
+.submit-btn {
+    padding: 1rem;
+    font-size: 1.7rem;
+    border: 1px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in;
+}
+
+.link-btn:hover,
+.generate-quote:hover,
+.submit-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.generate-quote i {
+    margin: 0 .5rem;
+}
+
+.link-btn.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+#quote {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+#character-name,
+#anime-name {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.user-input {
+    width: 50%;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid #333;
+    color: #333;
+    background-color: #fff;
+    font-size: 1.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+
+footer p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    #content {
+        width: 90%;
+    }
+    .user-input {
+        width: 50%;
+    }
+    .links-container {
+        width: 30%;
+    }
+}
