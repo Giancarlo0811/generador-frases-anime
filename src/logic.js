@@ -18,7 +18,7 @@ async function generateQuoteByAnimeName(url, input) {
     
     const response = await fetch(url + input, {mode: 'cors'});
     if (response.status == 404 || response.status == 400) {
-        alert('Introduce un anime correcto');
+        alert('No se pudo encontrar la frase');
     }
     else {
         let data = await response.json();
@@ -36,7 +36,7 @@ async function generateQuoteByCharName(url, input) {
     
     const response = await fetch(url + input, {mode: 'cors'});
     if (response.status == 404 || response.status == 400) {
-        alert('Introduce un anime correcto');
+        alert('No se pudo encontrar la frase');
     }
     else {
         let data = await response.json();
